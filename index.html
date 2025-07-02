@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="professional-portfolio_3476457.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <title>Charity's Portfolio</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: white;
+            background: url('./IMG-20240329-WA0036.jpg') no-repeat center center/cover;
+            scroll-behavior: smooth;
+        }
+        .profile-photo {
+            width: 150px;
+            height: 180px;
+            border-radius: 15%;
+            border: 3px solid #f4d03f;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        .profile-photo:hover {
+            transform: scale(1.1);
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2em;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #f4d03f;
+        }
+        section {
+            padding: 100px 20px;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.7);
+            margin: 50px auto;
+        }
+        #skills ul, #projects ul {
+            list-style: none;
+            padding: 0;
+        }
+        #skills li, #projects li {
+            margin: 10px 0;
+            font-size: 1.2em;
+        }
+        #contact a {
+            color: #f4d03f;
+            text-decoration: none;
+        }
+        #about p {
+            border: 2px dotted #f4d03f;
+            padding: 10px;
+            font-size: 1.2em;
+        }
+        #backToTop {
+            display: none;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 1000;
+            font-size: 18px;
+            background-color: #f4d03f;
+            color: black;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        #backToTop:hover {
+            background-color: #d4ac0d;
+        }
+        body.dark-mode {
+            background: #1a1a1a;
+            color: #f4d03f;
+        }
+        body.dark-mode section {
+            background: rgba(255, 255, 255, 0.1);
+        }
+        body.dark-mode nav {
+            background: rgba(255, 255, 255, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Charity Spoko</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+                <button id="darkModeToggle" class="btn btn-warning">🌙 Dark Mode</button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="py-5 mt-5 text-center bg-dark bg-opacity-50">
+        <div class="container d-flex flex-column flex-md-row align-items-center justify-content-center">
+            <img src="profile.jpg" alt="Charity's Profile Photo" class="profile-photo me-md-4 mb-3 mb-md-0" data-aos="flip-right">
+            <div class="text-white">
+                <h1 data-aos="fade-up-left">Charity Spoko</h1>
+                <p data-aos="fade-up-left">Business Information Systems Student</p>
+                <p data-aos="fade-up-left">An aspiring software developer</p>
+            </div>
+        </div>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p data-aos="fade-right">I am a fourth-year student doing Business Information Systems and have been privileged to be one of the beneficiaries for the full-stack web development certification program offered by <a href="https://www.code-blossom.com/" target="_blank">Code Blossom</a>. I am passionate about web development, network security, and automating systems. I enjoy solving challenges and learning new technologies.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li data-aos="fade-right">Web–Development (HTML, CSS, JavaScript, PHP)</li>
+            <li data-aos="fade-right">Linux System Automation</li>
+            <li data-aos="fade-right">Network Security</li>
+            <li data-aos="fade-right">Accounting</li>
+            <li data-aos="fade-right">Database Management</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li data-aos="fade-right">Maid Recruiting System (Second year) <a href="Maid_recruiting/" target="_blank">Maid_recruiting</a></li>
+            <li data-aos="fade-right">Linux Automation Scripts for Updates (third year) <a href="IMPLEMENTING AN AUTOMATED SYSTEM UPDATE IN UBUNTU LINUX OPERATING SYSTEMS.docx" target="_blank">Automated System Update</a></li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p data-aos="fade-up-left">Email: <a href="mailto:liwewecharity@gmail.com">liwewecharity@gmail.com</a></p>
+        <p data-aos="fade-up-left">Email: <a href="mailto:bis20-cspoko@mubas.ac.mw">bis20-cspoko@mubas.ac.mw</a></p>
+        <p data-aos="fade-up-left">Phone: <a href="tel:+265885745016">+265 885745016</a></p>
+        <p data-aos="fade-up-left">WhatsApp: <a href="https://wa.me/265885745016">Chat with me on WhatsApp</a></p>
+    </section>
+
+    <button id="backToTop" title="Go to top">↑ Top</button>
+    <footer class="bg-dark text-center text-white py-3">
+        <p>&copy; 2025 Charity Spoko</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        const backToTopButton = document.getElementById("backToTop");
+        window.onscroll = function () {
+            backToTopButton.style.display = (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) ? "block" : "none";
+        };
+        backToTopButton.addEventListener("click", function () {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+    </script>
+    <script>
+        const darkModeToggle = document.getElementById("darkModeToggle");
+        darkModeToggle.addEventListener("click", function () {
+            document.body.classList.toggle("dark-mode");
+            if (document.body.classList.contains("dark-mode")) {
+                localStorage.setItem("theme", "dark");
+                darkModeToggle.textContent = "☀️ Light Mode";
+            } else {
+                localStorage.setItem("theme", "light");
+                darkModeToggle.textContent = "🌙 Dark Mode";
+            }
+        });
+        if (localStorage.getItem("theme") === "dark") {
+            document.body.classList.add("dark-mode");
+            darkModeToggle.textContent = "☀️ Light Mode";
+        }
+    </script>
+</body>
+</html>
